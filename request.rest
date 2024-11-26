@@ -1,0 +1,93 @@
+POST http://localhost:4000/api/v1/register
+Content-Type: application/json
+
+{
+   "username": "AdminJeff",
+   "password": "@Jeff1234",
+   "confpassword": "@Jeff1234",
+   "kelas": "Admin"
+}
+
+###
+POST http://localhost:4000/api/v1/login
+Content-Type: application/json
+
+{
+   "username": "Udin1234",
+   "password": "@Udin1234"
+}
+
+### 
+GET http://localhost:4000/api/v1/logout
+
+### 
+GET http://localhost:4000/api/v1/ekskul
+
+
+###
+POST http://localhost:4000/api/v1/ekskul
+Content-Type: application/json
+
+{
+   "username": "Tenis Meja",
+   "hobi": "Membaca",
+   "deskripsi": "latihann dek aama aku",
+   "jadwal": "setiap senin dan Rabu"
+}
+
+###
+PATCH http://localhost:4000/api/v1/ekskul/4696f829-83e0-4fcc-bde8-3e652d15c687
+Content-Type: application/json
+
+{
+   "username": "futsal",
+   "hobi": "main ml",
+   "deskripsi": "latihann sini dekk sama abg",
+   "jadwal": "setiap senin dan kamis"
+}
+
+
+###
+GET http://localhost:4000/api/v1/ekskul
+
+###
+GET http://localhost:4000/api/v1/users
+
+###
+GET http://localhost:4000/api/v1/getMe
+
+
+###
+PATCH http://localhost:4000/api/v1/statusEkskul/a1d0ffca-934b-451e-aa91-0b5ea16e3a77
+
+
+###
+PATCH http://localhost:4000/api/v1/users/bcdbcf01-c97f-4348-ac8d-40b7c5b9487b
+
+# riwayat pendaftaran
+###
+GET http://localhost:4000/api/v1/riwayatPendaftaran
+
+# Tampilkan Pendaftaran
+###
+GET http://localhost:4000/api/v1/pendaftaran
+
+# Terima Pendaftaran
+###
+PATCH http://localhost:4000/api/v1/approve/b1836230-c9c3-4bfb-a21a-41e72f57820f
+
+# Tolak Pendaftaran
+###
+PATCH http://localhost:4000/api/v1/disApprove/553d19c0-4cf5-425d-9b5d-9125043c53c6
+
+###
+GET http://localhost:4000/api/v1/pendaftaran/d3a58be8-2a60-485f-96f7-1f252caa941f
+
+###
+POST http://localhost:4000/api/v1/pendaftaran
+Content-Type: application/json
+
+{
+   "deskripsi": "saya bisa sadd",
+   "id_ekskul": "9476e02b-2878-4ea8-aaed-a383e48fb6a5"
+}
